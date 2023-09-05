@@ -1,5 +1,13 @@
--   id: mix-format
-    name: mix format
-    description: formats elixir projects
-    language: script
-    entry: mix format
+- id: mix-format
+  name: mix format
+  description: formats elixir projects
+  language: system
+  entry: mix format --check-formatted
+  pass_filenames: false
+
+- id: credo
+  name: credo
+  description: runs the credo linter
+  language: system
+  entry: mix credo
+  pass_filenames: false
