@@ -1,0 +1,5 @@
+-   id: mix-format
+    name: mix format
+    description: formats elixir projects
+    language: script
+    entry: mix format
